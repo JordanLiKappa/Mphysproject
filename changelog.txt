@@ -1,0 +1,19 @@
+Code I have modified:
+samples.cc 
+analysis.cc 
+oxford.cc 
+detector.cc
+oxford_sideband.cc
+oxford_atalas_qcd.cc 
+samples.h
+analysis.h
+oxford.h
+oxford_sideband.h
+oxford_atlas_qcd.h
+
+I added finalState const& higgsfs to all the analysis function that is called.
+Then I added some lines in the oxford.cc to test if the new code can tell if
+higgs are inside the largeR jet (I have commented out this part).
+This is for the purpuse of checking how many jets contain a true Higgs with two b quarks.
+Also the definition of jets are modified to match the pubnote. 
+I also turn off the tagger in the code, which is oxford.cc (line 793) and oxford_atlas_qcd.cc (line 389). 
